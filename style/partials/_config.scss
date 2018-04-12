@@ -1,0 +1,14 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+// Core variables and mixins
+@import "partials/variables";
+@import "partials/mixins";
+
+// Reset and dependencies
+@import "partials/foundation";
+@import "partials/wrapcon";
+@import "partials/components";
+@import "partials/slick";
+@import "partials/slick-theme";
