@@ -1,0 +1,643 @@
+.prisijunk-page-container {
+	max-width: 950px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#narystes .col-12 {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.tab-titless {
+	font-family: Helvetica-bold;
+	font-weight: normal;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #f4f4f4;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+.tab-titles-wrap {
+	position: relative;
+}
+.tab-titles-wrap span {
+	&:after{
+		position: absolute;
+		content: '';
+		border:2px solid #ff2929;
+		width: 50px;
+		bottom:-23px;
+		left:43%;
+	}
+}
+.membership-descr {
+	font-family: 'Helvetica-Bold';
+	font-size: 16px;
+	line-height: 25px;
+	margin-top:50px;
+}
+.what-you-get {
+	border-right: 1px solid #efefef;
+	font-family: 'Helvetica-Bold';
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 25px;
+	text-transform: uppercase;
+	padding-left: 70px !important;
+	margin-top: 76px !important;
+}
+.what-you-get-list {
+	font-family: Helvetica;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 76px !important;
+	padding-left: 70px !important;
+	li { 
+		&:before {
+			content: "";
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 2px;
+			height: 5px;
+			width: 5px;
+			background: #ff6262;
+		}
+	}
+}
+.pricelist-border-and-background {
+	border:1px solid #dfdfdf;
+	background-color: #f7f7f7;
+}
+.pricelist-border {
+	border:1px solid #dfdfdf;
+}
+.pricelist-title {
+	font-family: Helvetica;
+	font-size: 34px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.pricelist-subtitle {
+	font-family: Helvetica;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.pricelist-price {
+	font-family: Helvetica;
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 500;
+}
+.pricelist-term {
+	color:#989898;
+}
+.pricelist-persons {
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	color: #b1b1b1;
+}
+.pricelist-buttons .btn {
+	font-family: 'Helvetica-Bold';
+	color: #5e5e5e !important;
+	border:1px solid #d2d2d2;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 0px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+.pricelist-buttons .btn-red {
+	background-color: #ff2929;
+	color: white !important;
+	border-radius: 3px;
+}
+p {
+	margin-bottom: 0 !important;
+}
+
+.sponsors-content-title {
+	font-family: Helvetica;
+	font-size: 35px;
+	font-weight: 700;
+	position: relative;
+}
+
+.sponsors-content-title-border {
+	span {
+		position:absolute;
+		bottom: 0;
+		content:'';
+		height: 3px;
+		width: 41px;
+		background-color: #3b3b3b;
+		margin-left: -20px;
+	}
+}
+
+.sponsors-text-red {
+	color:#ff2929;
+}
+
+.sponsors-uppercase {
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.savanoriai-slider .slick-next, .savanoriai-slider .slick-prev {
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.savanoriai-slider .slick-next::before {
+	content: '';
+	width: 24px;
+	height: 30px;
+	background-image: url(../img/slider-arrow-right.png);
+	display: inline-block;
+}
+
+.savanoriai-slider .slick-prev::before {
+	content: '';
+	width: 24px;
+	height: 30px;
+	background-image: url(../img/slider-arrow-left.png);
+	display: inline-block;
+}
+
+.savanoriai .btn {
+	background-color: #b0b5ba;
+	height: 40px;
+	line-height: 40px;
+	width: 240px;
+	font-family: Helvetica-bold;
+	font-weight: normal;
+	letter-spacing: 3px;
+	font-size: 13px;
+	border-radius: 3px;
+}
+
+.prisijunk-footer-block-margin {
+	margin-top: 120px;
+	background-color: #f7f7f7;
+}
+
+.prisijunk-footer-subtitle {
+	font-family: helvetica;
+	font-size: 20px;
+	color:#7d7d7d;
+}
+
+.prisijunk-footer-subscribe .input-group {
+	width: 40% !important;
+	.form-control {
+		height: 50px;
+		border: none;
+		color:#afb4ba;
+		width: 68%;
+		display: inline-block;
+		&::placeholder {
+			color: #afb4ba;
+			opacity: 1;
+			font-size: 15px;
+			font-family: helvetica;
+			font-weight: 300;
+		}
+		&:-ms-input-placeholder {
+			color: #afb4ba;
+			font-size: 15px;
+			font-family: helvetica;
+			font-weight: 300;
+		}
+		&::-ms-input-placeholder {
+			color: #afb4ba;
+			font-size: 15px;
+			font-family: helvetica;
+			font-weight: 300;
+		}
+	}
+	.btn-outline-secondary {
+		width: 30%;
+		height: 50px;
+		background-color: #dcdcdc;
+		color:white;
+		font-family: helvetica-bold;
+		font-weight: normal;
+		border:none;
+		font-size: 13px;
+		letter-spacing: 3px;
+		padding-left: 50px;
+		padding-right: 50px;
+		text-transform: uppercase;
+		margin-left: -10px;
+	}
+}
+
+.prisijunk-sponsors .mobile_sponsors {
+	background-color: #f7f7f7;
+	width: 100%;
+	text-align: center;
+	font-family: helvetica;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#959595;
+	font-size: 11px;
+}
+
+
+
+
+.prisijunk-footer-copyrights {
+	p {
+		font-size: 12px;
+		color:#afb4ba;
+	}
+}
+
+.sticky-prisijunk-tabs {
+	position: fixed;
+	top:0;
+	width: 950px;
+	background-color: white;
+	z-index: 999;
+	padding-top: 30px;
+}
+
+#narystes {
+	margin-top: 85px;
+}
+
+.sponsors-block {
+	margin-top: 65px;
+}
+.sponsors-contact-info {
+	text-align: center;
+}
+.savanoriams-title {
+	margin-top: 40px;
+}
+
+.prisijunk-footer {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.prisijunk_sponsors {
+	background-color: #f7f7f7;
+	width: 100%;
+	text-align: center;
+	font-family: helvetica;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#959595;
+	font-size: 11px;
+}
+
+.prisijunk-remejai-title {
+	display: table;
+	white-space: nowrap;
+	font-size: 11px;
+	letter-spacing: 3px;
+	margin:0 auto;
+	width: 55%;
+	&:before, &:after {
+		border-top: 1px solid #e9e9e9;
+		content: '';
+		display: table-cell;
+		position: relative;
+		top: 0.5em;
+		width: 45%;
+	}
+	&:before { right: 1.5%; }
+	&:after { left: 1.5%; }
+}
+
+.prisijunk-footer-socials, .prisijunk-footer-socials-laptop {
+	li {
+		width: auto;
+		padding: 10px;
+		float: left;
+	}
+}
+
+.savanoriai-privalumai, .savanoriai-galimybes {
+	text-align: justify;
+}
+
+.savanoriai-privalumai p, .savanoriai-galimybes p {
+	font-family: 'Helvetica';
+	font-size: 15px;
+	color: #5f5f5f;
+}
+
+/*MOBILE CSS*/
+
+@media only screen and (max-width:1280px) {
+	.pricelist-title {
+		font-size: 28px;
+	}
+
+}
+
+@media only screen and (min-width:768px) {
+	.prisijunk-footer-socials {
+		display: none !important;
+	}
+	.prisijunk-footer-socials-laptop {
+		display: flex;
+	}
+	.prisijunk_sponsors {
+		display: none;
+	}
+	.tab-titless {
+		display: flex !important;
+	} 
+	.prisijunk-footer-subscribe {
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+		.input-group {
+			width: 650px !important;
+		}
+	}
+	.sponsors-logo-single {
+		height: 130px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.sponsors-logo-single img {
+		width:100%; 
+		height:auto; 
+		margin:0;
+	}
+	.sponsors-logo-single:nth-of-type(3n+1) {
+		padding-right:2.5% !important;
+	}
+	.sponsors-logo-single:nth-of-type(3n+2) {
+		padding:0 1.25% !important;
+	}
+	.sponsors-logo-single:nth-of-type(3n+3) {
+		padding-left:2.5% !important;
+		padding-right: 0px !important;
+	}
+	.pricebox:nth-of-type(3n+1) {
+		padding-right:2.5% !important;
+	}
+	.pricebox:nth-of-type(3n+2) {
+		padding:0 1.25% !important;
+	}
+	.pricebox:nth-of-type(3n+3) {
+		padding-left:2.5% !important;
+		padding-right: 0px !important;
+	}
+	.savanoriai-slider, .sponsors-content-title-border {
+		margin-top: 40px;
+	}
+	.savanoriams-title {
+		margin-top: 60px;
+	}
+	.savanoriai-button {
+		margin-top: 45px;
+	}
+	.savanoriai-galimybes {
+		margin-top: 45px;
+	}
+	.sponsors-desc {
+		margin-top: 0px !important;
+	}
+	.sponsors-contact-info {
+		text-align: left !important;
+	}
+}
+
+@media only screen and (max-width:768px) {
+
+	.sponsors-logo-single:nth-of-type(2n+1) {
+		padding-right:2.5% !important;
+	}
+	.sponsors-logo-single:nth-of-type(2n+2) {
+		padding-left:2.5% !important;
+	}
+
+	.prisijunk-footer-socials-laptop {
+		display: none;
+	}
+	.pricelist-title {
+		font-size: 24px;
+	}
+	.prisijunk-remejai-title {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 100%;
+	}
+	.membership-descr {
+		margin-top:50px;
+	}
+	#narystes {
+		margin-top: 60px;
+	}
+	.pricebox {
+		padding:10px !important;
+	}
+	.sponsors-contact-info {
+		text-align: left;
+		line-height: 30px;
+	}
+	.sponsors-contact-info-content {
+		line-height: 25px;
+		margin-top: 10px;
+	}
+	.sponsors-content-title-border {
+		margin-top: 40px;
+	}
+	.savanoriai-slider {
+		margin-top: 40px;
+	}
+	.savanoriai-privalumai {
+		margin-top: 10px;
+	}
+	.savanoriai-galimybes {
+		margin-top: 40px;
+	}
+	.savanoriai-button {
+		margin-top: 40px;
+	}
+	.prisijunk-footer-block-margin {
+		margin-top: 100px;
+	}
+	.prisijunk-footer-subscribe {
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+		.input-group {
+			width: 100% !important;
+		}
+	}
+	.sponsor__item:not(:last-child) {
+		margin-right: 80px !important;
+	}
+	.slick-dots {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	.prisijunk-footer-subscribe .input-group {
+		.form-control {
+			width: 50% !important;
+		}
+		.btn-outline-secondary {
+			width: 50% !important; 
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+		}
+	}
+	.prisijunk_sponsors .sponsor__item:not(:last-child) {
+		margin-right: 20px !important;
+	}
+}
+
+@media only screen and (min-width:400px) {
+	.prisijunk-footer-subscribe {
+		.btn-outline-secondary {
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+		}
+	}
+	.sponsors-contact-info {
+		text-align: center;
+		line-height: 30px;
+		width: 100%;
+	}
+	.sponsors-desc {
+		margin-top: 40px;
+	}
+	.footer-copy-first {
+		text-align: left;
+	}
+	.footer-copy-second {
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.footer-copy-first, .footer-copy-second {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.prisijunk-footer {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	#narystes hr {
+		display: none !important;
+	}
+	.sponsors-desc {
+		margin-top: 40px;
+	}
+	.sponsors-contact-info {
+		text-align: center;
+		line-height: 30px;
+		width: 100%;
+	}
+	.prisijunk-remejai-title {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.tab-titless {
+		display: none;
+	}
+	.membership-descr {
+		margin-top:40px !important;
+	}
+	.what-you-get {
+		margin-top: 35px !important;
+	}
+	.what-you-get-list {
+		padding-left: 15px !important;
+		margin-top: 27px !important;
+	}
+	#narystes {
+		margin-top: 55px;
+	}
+	.sponsors-contact-info {
+		width: 200px;
+		margin:0 auto;
+	}
+	.sponsors-contact-info-content {
+		margin-top: 25px;
+	}
+	.sponsors-desc {
+		margin-top:40px;
+	}
+	.savanoriams-title {
+		margin-top: 40px;
+	}
+	.savanoriai-slider {
+		margin-top:40px;
+	}
+	.savanoriai-privalumai {
+		margin-top:40px;
+	}
+	.slick-dotted.slick-slider {
+		margin-bottom: 0px !important;
+	}
+	.savanoriai-galimybes {
+		margin-top:40px;
+	}
+	.savanoriai-button {
+		margin-top: 40px;
+	}
+	.savanoriai .btn {
+		width: 100%;
+	}
+	.prisijunk-footer-block-margin {
+		margin-top: 100px;
+	}
+	.prisijunk-footer-subscribe .input-group {
+		width: 100% !important;
+		.form-control {
+			width: 60%;
+		}
+		.btn-outline-secondary {
+			width: 40%;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	.prisijunk-footer-socials {
+		display: none;
+	}
+	.tab-titless {
+		display: none;
+	}
+	.prisijunk_sponsors .sponsor__item:not(:last-child) {
+		margin-right: 20px !important;
+	}
+	.prisijunk-footer-subscribe {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+		.input-group {
+			width: 100% !important;
+		}
+		.btn-outline-secondary {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+}
+
+@media only screen and (max-width:1170px) {
+
+	.sticky-prisijunk-tabs {
+		width: 100%;
+		margin:0;
+		left: 0;
+	}
+	.tab-titless {
+		display: none;
+	}
+}

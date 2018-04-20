@@ -1,0 +1,102 @@
+// =========================================================================
+// MIXINS
+// =========================================================================
+
+/* CENTER BLOCK */
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
+
+/* CLEARFIX */
+
+%cf {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* SIZE */
+// usage example: @include size(350px, 350px);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/* TRANSITION */
+// usage example:  @include transition(all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms);
+
+
+@mixin ffc($fontFamily, $fontSize, $color){
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $color;
+}
+
+@mixin fc($fontSize, $color){
+	font-size: $fontSize;
+	color: $color;
+}
+
+
+@mixin responsive_sprite ($icon-width, $icon-height, $icon-offset-x, $icon-offset-y, $sprite-width, $sprite-height) {
+    display: block;
+
+    /* spritemap size ÷ sprite size × 100% */
+    background-size: ($sprite-width/$icon-width)*100% auto;
+
+    /*(sprite offset) ÷ (spritemap size - sprite size) × 100% */
+    background-position: (($icon-offset-x)/($sprite-width - $icon-width)*100%) (($icon-offset-y)/($sprite-height - $icon-height)*100%);
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: ($icon-height / $icon-width) * 100%;
+
+    }
+}
+// usage example: (http://html5.by/blog/placeholder/)
+// input {
+//   @include placeholder {
+//     font-family: $base-font-family;
+//     color: red;
+//   }
+// }
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+

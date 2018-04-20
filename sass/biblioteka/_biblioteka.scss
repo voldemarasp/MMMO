@@ -1,0 +1,254 @@
+.container-header {
+	max-width: 1720px;
+	margin: 0 auto;
+}
+
+.biblioteka-page-container {
+	max-width: 1720px;
+	margin: 0 auto;
+	.first-block {
+		padding-right: 40px;
+		padding-left: 0px;
+		height: auto;
+		h1 {
+			font-size: 60px;
+		}
+	}
+}
+
+.grey-btn {
+	background-color: #b0b5ba;
+	padding-right: 25px;
+	padding-left: 25px;
+	color:white;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	margin-top: 40px;
+}
+
+.mo-leidiniai {
+	margin-top: 65px;
+	h1 {
+		font-family: 'Helvetica-bold';
+		font-size:35px;
+		font-weight: normal;
+		color: #3b3b3b;
+		position: relative;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		&:after {
+			position:absolute;
+			bottom: 0;
+			left: 0;
+			content: '';
+			height: 3px;
+			width: 41px;
+			background-color: #3b3b3b;
+		}
+	}
+	h3 {
+		font-family: 'Helvetica-bold';
+		font-size:18px;
+		font-weight: normal;
+		color: #3b3b3b;
+	}
+	.mo-leidiniai-title {
+		margin-top: 20px;
+	}
+	.mo-leidiniai-img {
+		display: flex;
+		justify-content: center;
+		height: 350px;
+	}
+	.mo-leidiniai-tags {
+		margin-top:15px;
+		height: 100%;
+		span {
+			background-color: #eaeaea;
+			color:#000000;
+			padding: 0px 7px;
+			border-radius: 3px;
+			line-height: 21px;
+			height: 21px;
+			font-family: 'Helvetica';
+			font-size: 11px;
+			display:inline-block;
+			margin-top: 15px;
+		}
+	}
+}
+
+.col-for-5 {
+	-ms-flex:0 0 20%;
+	flex:0 0 20%;
+	max-width:20%;
+	&:nth-child(n+6) {
+		margin-top:100px;
+	}
+	&:nth-of-type(3n+1) {
+		padding-right: 4%;
+		padding-left: 0px;
+	}
+	&:nth-of-type(3n+2) {
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+	&:nth-of-type(3n+3) {
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+	&:nth-of-type(3n+4) {
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+	&:nth-of-type(3n+5) {
+		padding-left: 4%;
+		padding-right: 0px;
+	}
+}
+
+
+/*MOBILE CSS*/
+
+@media only screen and (min-width:992px) and (max-width:1280px) {
+	.biblioteka-page-container {
+		.first-block {
+			padding-right: 20px;
+		}
+	}
+	.container-header {
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+
+	.biblioteka-page-container {
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+
+	.col-for-5:nth-child(n+6) {
+		margin-top:60px;
+	}
+
+	.col-for-5 {
+		-ms-flex:0 0 33%;
+		flex:0 0 33%;
+		max-width:33%;
+		&:nth-child(n+4) {
+			margin-top:40px;
+		}
+		&:nth-of-type(3n+1) {
+			padding-right: 4%;
+			padding-left: 0px;
+		}
+		&:nth-of-type(3n+2) {
+			padding-right: 2%;
+			padding-left: 2%;
+		}
+		&:nth-of-type(3n+3) {
+			padding-left: 4%;
+			padding-right: 0px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+	.container-header {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.biblioteka-page-container {
+		padding-right: 40px;
+		padding-left: 40px;
+		max-width: 100%;
+		.first-block {
+			padding-right: 0px;
+		}
+	}
+	.col-for-5 {
+		-ms-flex:0 0 33%;
+		flex:0 0 33%;
+		max-width:33%;
+		&:nth-child(n+4) {
+			margin-top:40px;
+		}
+		&:nth-of-type(3n+1) {
+			padding-right: 4%;
+			padding-left: 0px;
+		}
+		&:nth-of-type(3n+2) {
+			padding-right: 2%;
+			padding-left: 2%;
+		}
+		&:nth-of-type(3n+3) {
+			padding-left: 4%;
+			padding-right: 0px;
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+	.biblioteka-page-container {
+		.first-block {
+			h1 {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.subscribe__form {
+		display: block !important;
+	}
+	.col-for-5 {
+		-ms-flex:0 0 50%;
+		flex:0 0 50%;
+		max-width:50%;
+		&:nth-child(n+3) {
+			margin-top:40px;
+		}
+		&:nth-of-type(2n+1) {
+			padding-right: 4%;
+			padding-left: 0px;
+		}
+		&:nth-of-type(2n+2) {
+			padding-right: 0;
+			padding-left: 4%;
+		}
+	}
+	.container-header {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.biblioteka-page-container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.col-for-5 {
+		-ms-flex:0 0 100%;
+		flex:0 0 100%;
+		max-width:100%;
+		&:nth-child(n+2) {
+			margin-top:40px;
+		}
+		&:nth-of-type(1n+1) {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+	}
+	.container-header {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.biblioteka-page-container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+}

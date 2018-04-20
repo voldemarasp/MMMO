@@ -1,0 +1,147 @@
+//-------------------------------------------- Foundation
+// Reference: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+iframe {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+blockquote,
+figure,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-size: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    // transition: color .3s;
+}
+
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+html input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+img {
+    /*Make images behave responsively. Here they will scale up to 100% of their natural size*/
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    /*Make images display as a block (UA default is usually inline)*/
+    display: block;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 16px 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+input,
+fieldset {
+    border: 0;
+    padding: 0;
+    /*inputs and fieldset defaults to having a min-width equal to its content in Chrome and Firefox (https://code.google.com/p/chromium/issues/detail?id=560762), we may not want that*/
+    min-width: 0;
+}
+/*This switches the default outline off when an input receives focus (really important for users tabbing through with a keyboard) so ensure you put something decent in for your input focus instead!!*/
+input:focus {
+    outline: 0;
+}

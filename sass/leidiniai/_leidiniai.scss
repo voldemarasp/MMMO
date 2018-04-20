@@ -1,0 +1,275 @@
+.leidiniai-container {
+    width:800px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.related-leidiniai-container {
+    width:1720px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.leidiniai-first {
+    margin-top:55px;
+    display: flex;
+    align-items: center;
+}
+
+.header-exit-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-image: url(../img/close-menu-ico.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: #353738;
+        border-radius: 50%;
+    }
+}
+
+.leidiniai-first-img {
+    width: 380px;
+}
+
+.leidiniai-first-img img {
+    width: 380px;
+}
+
+.leidiniai-first-info {
+    width:calc((100% - 380px));
+    padding-left: 40px;
+    h1 {
+        font-family: 'Helvetica-bold';
+        font-size: 25px;
+        font-weight: normal;
+    }
+    span {
+        background-color: #eaeaea;
+        color: #000000;
+        padding: 0px 7px;
+        border-radius: 3px;
+        line-height: 21px;
+        height: 21px;
+        font-family: 'Helvetica';
+        font-size: 11px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+
+.leidiniai-first-more {
+    display: inline-block;
+    margin-top: 40px;
+    p {
+        display: inline;
+    }
+    img {
+        display: inline;
+    }
+}
+.leidiniai-second {
+    margin-top: 30px;
+}
+
+.leidiniai-second-title {
+    p {
+        font-family: 'Helvetica-bold';
+        font-size: 13px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+}
+
+.leidiniai-second-content {
+    p {
+        font-family: 'Helvetica';
+        font-size: 15px;
+        font-weight: normal;
+        color:#7d7d7d;
+        text-align: justify;
+        margin-top: 30px;
+    }
+}
+
+.leidiniai-third {
+    margin-top: 120px;
+}
+
+.leidiniai-third-title {
+    h1 {
+        font-family: 'Helvetica-bold';
+        font-size: 35px;
+        font-weight: normal;
+        color: #3b3b3b;
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            height: 3px;
+            width: 41px;
+            background-color: #3b3b3b;
+        }
+    }
+}
+
+h3 {
+    font-family: 'Helvetica-bold';
+    font-size:18px;
+    font-weight: normal;
+    color: #3b3b3b;
+}
+.mo-leidiniai-title {
+    margin-top: 20px;
+}
+.mo-leidiniai-img {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+.mo-leidiniai-tags {
+    margin-top:15px;
+    height: 100%;
+    span {
+        background-color: #eaeaea;
+        color:#000000;
+        padding: 0px 7px;
+        border-radius: 3px;
+        line-height: 21px;
+        height: 21px;
+        font-family: 'Helvetica';
+        font-size: 11px;
+        display:inline-block;
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1280px) {
+
+    .related-leidiniai-container {
+        width:100%;
+    }
+
+    .leidiniai-container {
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .related-leidiniai-container {
+        width:100%;
+    }
+
+    .leidiniai-container {
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+
+    .leidiniai-first-info-title {
+        margin-top: 40px;
+    }
+
+    .leidiniai-first-info-title, .leidiniai-first-info-tags, .leidiniai-first-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .leidiniai-first {
+        margin-top:55px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+    }
+
+    .leidiniai-first-info {
+        width:100%;
+        padding-left: 0px;
+    }
+
+    .related-leidiniai-container {
+        width:100%;
+    }
+
+    .leidiniai-container {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .leidiniai-first-info {
+        width:100%;
+        padding-left: 0px;
+    }
+
+
+    .leidiniai-first-info-title {
+        margin-top: 40px;
+    }
+
+    .leidiniai-first-info-title, .leidiniai-first-info-tags, .leidiniai-first-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .leidiniai-first {
+        margin-top:55px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+    }
+
+    .leidiniai-first-info {
+        width:100%;
+        padding-left: 0px;
+        h1 {
+            font-family: 'Helvetica-bold';
+            font-size: 25px;
+            font-weight: normal;
+        }
+        span {
+            background-color: #eaeaea;
+            color: #000000;
+            padding: 0px 7px;
+            border-radius: 3px;
+            line-height: 21px;
+            height: 21px;
+            font-family: 'Helvetica';
+            font-size: 11px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    }
+
+    .related-leidiniai-container {
+        width:100%;
+    }
+
+    .leidiniai-container {
+        width:100%;
+    }
+}

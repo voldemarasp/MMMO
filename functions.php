@@ -11,4 +11,7 @@
 
 register_nav_menus( array(
 	'main' => 'Pagrindinis meniu',
+	'aplankyk' => 'Aplankyk submenu',
+	'kolekcija' => 'Kolekcija submenu',
+	'muziejus' => 'Muziejus submenu',
 ) );

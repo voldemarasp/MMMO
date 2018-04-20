@@ -1,0 +1,23 @@
+{
+  "name": "Jonatanas",
+  "version": "1.0.0",
+  "description": "check",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-install": "^1.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-watch": "^4.3.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}

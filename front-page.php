@@ -4,7 +4,7 @@ get_header();
 ?>
 <!-- CONTENT -->
 <main class="content">
-    <div class="hero">
+    <div class="hero" style="overflow: hidden;">
         <div class="hero__slider hero-slider_js">
         	<?php $slides = ot_get_option( 'slider', array() );
         	foreach ($slides as $slide) {
@@ -72,11 +72,21 @@ get_header();
             </div>
         </div>
     </div>
+    <div class="mobile_sponsors pb-4 pt-4">
+    	<p class="subtitle fancy"><span>Remėjai</span></p>
+    	<div class="mt-4">
+    	<?php $remejai = ot_get_option( 'remejai', array() ); 
+                                        	foreach ($remejai as $remejas) { ?>
+                                            <a href="<?php echo $remejas['nuoroda']; ?>" class="sponsor__item">
+                                                <img src="<?php echo $remejas['tamsus_logotipas']; ?>" alt="">
+                                            </a>
+                                            <?php } ?>
+                                        </div>
+    </div>
+    <div class="mobile-copyrights mt-3 text-center">
+    	<p>Copyright 2017 Mo All Rights Reserved.</p>
+    	<p>Sprendimas: zet.lt</p>
+    </div>
 </main>
 <!-- CONTENT END -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/vp.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>
